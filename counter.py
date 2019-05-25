@@ -16,7 +16,7 @@ def on_press(key):
 def on_release(key):
     held_keys.discard(key)
     print(held_keys)
-    if 'Key.esc' and 'Key.ctrl_l' and 'Key.alt_l' in held_keys:
+    if 'Key.esc' and ('Key.ctrl_l' or 'Key.ctrl') and 'Key.alt_l' in held_keys:
         print('Thank you for using this Keylogger.')
         return False
 
